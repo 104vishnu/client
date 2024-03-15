@@ -1,0 +1,82 @@
+// .navbar {
+//     background-color: #f4f4f4; // Light background color
+
+//     .container {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 1rem;
+
+//         .logo img {
+//             width: 100px; // Adjust logo width as needed
+//             height: auto; // Maintain aspect ratio
+//         }
+
+//         .auth {
+//             .btn {
+//                 padding: 0.5rem 1rem;
+//                 background-color: #007bff; // Button color
+//                 color: #fff; // Button text color
+//                 border: none;
+//                 border-radius: 5px;
+//                 text-decoration: none;
+//                 transition: background-color 0.3s ease;
+
+//                 &:hover {
+//                     background-color: #0056b3; // Button color on hover
+//                 }
+//             }
+
+//             .link {
+//                 color: #007bff; // Link color
+//                 text-decoration: none;
+//                 transition: color 0.3s ease;
+
+//                 &:hover {
+//                     color: #0056b3; // Link color on hover
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.navbar {
+    background-color: #f4f4f4; // Light background color
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        .logo img {
+            width: 100px; // Adjust logo width as needed
+            height: auto; // Maintain aspect ratio
+
+            @media (max-width: 768px) {
+                width: 80px; // Decrease logo size for smaller screens
+            }
+        }
+
+        .auth {
+            .btn {
+                padding: 0.5rem 1rem;
+                background-color: #007bff; // Button color
+                color: #fff; // Button text color
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #0056b3; // Button color on hover
+                }
+
+                @media (max-width: 768px) {
+                    padding: 0.3rem 0.8rem; // Adjust button padding for smaller screens
+                }
+            }
+        }
+    }
+}
+
